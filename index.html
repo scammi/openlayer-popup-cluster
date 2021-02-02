@@ -96,7 +96,7 @@
         }); 
         
         let clusterSource = new ol.source.Cluster({
-          distance: 40,
+          distance: 35,
           source: source,
         });
        
@@ -109,7 +109,7 @@
             if (!style) {
               style = new ol.style.Style({
                 image: new ol.style.Circle({
-                  radius: 10,
+                  radius: 12,
                   stroke: new ol.style.Stroke({
                     color: '#fff',
                   }),
