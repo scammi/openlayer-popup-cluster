@@ -18,8 +18,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="address_data.js"></script>
     <style>
-      .popover {
-        width: 220px !important;
+      .popover{
+        width: 220px; 
       }
     </style>
     <script>
@@ -75,7 +75,8 @@
               placement: "top",
               container: popup_element,
               html: true,
-              content: `<div style="width 100%">${feature.get("name")}</div>`,
+              title: 'Address:',
+              content: `${feature.get("name")}`,
             });
 
             $(popup_element).popover("show");
