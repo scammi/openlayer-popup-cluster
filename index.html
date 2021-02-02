@@ -70,7 +70,7 @@
               placement: "top",
               container: popup_element,
               html: true,
-              content: feature.get("name"),
+              content: `<div style="width 100%">${feature.get("name")}</div>`,
             });
 
             $(popup_element).popover("show");
@@ -114,7 +114,7 @@
                     color: '#fff',
                   }),
                   fill: new ol.style.Fill({
-                    color: size == 1 ? '#FF0000':'#3399CC',
+                    color: size == 1 ? '#FF6666':'#3399CC',
                   }),
                 }),
                 text: new ol.style.Text({
